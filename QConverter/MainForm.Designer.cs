@@ -34,28 +34,6 @@
             this.hex_TextBox = new System.Windows.Forms.TextBox();
             this.binary_TextBox = new System.Windows.Forms.TextBox();
             this.main_TabControl = new MetroFramework.Controls.MetroTabControl();
-            this.dataConverter_Tab = new System.Windows.Forms.TabPage();
-            this.dataConverter_Panel = new System.Windows.Forms.Panel();
-            this.loadBinaryFile_Button = new MetroFramework.Controls.MetroButton();
-            this.dataConvertStatus_Label = new MetroFramework.Controls.MetroLabel();
-            this.float_TextBox = new System.Windows.Forms.TextBox();
-            this.float_Label = new MetroFramework.Controls.MetroLabel();
-            this.base64_TextBox = new System.Windows.Forms.TextBox();
-            this.rawBytes_Label = new MetroFramework.Controls.MetroLabel();
-            this.stringTextBox = new System.Windows.Forms.TextBox();
-            this.string_Label = new MetroFramework.Controls.MetroLabel();
-            this.bytesTextBox = new System.Windows.Forms.TextBox();
-            this.base64_Label = new MetroFramework.Controls.MetroLabel();
-            this.stringEncoding_ComboBox = new System.Windows.Forms.ComboBox();
-            this.asmDisasm_Tab = new System.Windows.Forms.TabPage();
-            this.asmStatusLabel = new MetroFramework.Controls.MetroLabel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.asmAction_ComboBox = new System.Windows.Forms.ComboBox();
-            this.asmArch_ComboBox = new System.Windows.Forms.ComboBox();
-            this.asmInput_ComboBox = new System.Windows.Forms.RichTextBox();
-            this.asmCodeLabel = new MetroFramework.Controls.MetroLabel();
-            this.hexDataLabel = new MetroFramework.Controls.MetroLabel();
-            this.asmResult_ComboBox = new System.Windows.Forms.RichTextBox();
             this.patternScan_Tab = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
@@ -78,6 +56,29 @@
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.scanOffsetBox = new MetroFramework.Controls.MetroTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.dataConverter_Tab = new System.Windows.Forms.TabPage();
+            this.dataConverter_Panel = new System.Windows.Forms.Panel();
+            this.loadBinaryFile_Button = new MetroFramework.Controls.MetroButton();
+            this.dataConvertStatus_Label = new MetroFramework.Controls.MetroLabel();
+            this.float_TextBox = new System.Windows.Forms.TextBox();
+            this.float_Label = new MetroFramework.Controls.MetroLabel();
+            this.base64_TextBox = new System.Windows.Forms.TextBox();
+            this.rawBytes_Label = new MetroFramework.Controls.MetroLabel();
+            this.stringTextBox = new System.Windows.Forms.TextBox();
+            this.string_Label = new MetroFramework.Controls.MetroLabel();
+            this.bytesTextBox = new System.Windows.Forms.TextBox();
+            this.base64_Label = new MetroFramework.Controls.MetroLabel();
+            this.stringEncoding_ComboBox = new System.Windows.Forms.ComboBox();
+            this.asmDisasm_Tab = new System.Windows.Forms.TabPage();
+            this.asmStatusLabel = new MetroFramework.Controls.MetroLabel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.asmAction_ComboBox = new System.Windows.Forms.ComboBox();
+            this.asmArch_ComboBox = new System.Windows.Forms.ComboBox();
+            this.asmInput_ComboBox = new System.Windows.Forms.RichTextBox();
+            this.asmCodeLabel = new MetroFramework.Controls.MetroLabel();
+            this.hexDataLabel = new MetroFramework.Controls.MetroLabel();
+            this.asmResult_ComboBox = new System.Windows.Forms.RichTextBox();
             this.codeConverter_Tab = new System.Windows.Forms.TabPage();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.codeRealTime_CheckBox = new MetroFramework.Controls.MetroCheckBox();
@@ -114,15 +115,7 @@
             this.trayWindow_Button = new System.Windows.Forms.PictureBox();
             this.pinWindow_Button = new System.Windows.Forms.PictureBox();
             this.opacity_TrackBar = new MetroFramework.Controls.MetroTrackBar();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.main_TabControl.SuspendLayout();
-            this.dataConverter_Tab.SuspendLayout();
-            this.dataConverter_Panel.SuspendLayout();
-            this.asmDisasm_Tab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
             this.patternScan_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -134,6 +127,13 @@
             this.splitContainer4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.dataConverter_Tab.SuspendLayout();
+            this.dataConverter_Panel.SuspendLayout();
+            this.asmDisasm_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.codeConverter_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer5)).BeginInit();
             this.splitContainer5.Panel1.SuspendLayout();
@@ -264,347 +264,19 @@
             this.main_TabControl.AllowDrop = true;
             this.main_TabControl.Controls.Add(this.dataConverter_Tab);
             this.main_TabControl.Controls.Add(this.asmDisasm_Tab);
-            this.main_TabControl.Controls.Add(this.patternScan_Tab);
-            this.main_TabControl.Controls.Add(this.codeConverter_Tab);
             this.main_TabControl.Controls.Add(this.IlExplorer_Tab);
+            this.main_TabControl.Controls.Add(this.codeConverter_Tab);
+            this.main_TabControl.Controls.Add(this.patternScan_Tab);
             this.main_TabControl.Controls.Add(this.about_Tab);
             this.main_TabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_TabControl.Location = new System.Drawing.Point(20, 60);
             this.main_TabControl.Name = "main_TabControl";
-            this.main_TabControl.SelectedIndex = 2;
+            this.main_TabControl.SelectedIndex = 0;
             this.main_TabControl.Size = new System.Drawing.Size(592, 324);
             this.main_TabControl.Style = MetroFramework.MetroColorStyle.White;
             this.main_TabControl.TabIndex = 8;
             this.main_TabControl.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.main_TabControl.UseSelectable = true;
-            // 
-            // dataConverter_Tab
-            // 
-            this.dataConverter_Tab.BackColor = System.Drawing.Color.Black;
-            this.dataConverter_Tab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dataConverter_Tab.Controls.Add(this.dataConverter_Panel);
-            this.dataConverter_Tab.Location = new System.Drawing.Point(4, 38);
-            this.dataConverter_Tab.Name = "dataConverter_Tab";
-            this.dataConverter_Tab.Padding = new System.Windows.Forms.Padding(3);
-            this.dataConverter_Tab.Size = new System.Drawing.Size(584, 282);
-            this.dataConverter_Tab.TabIndex = 0;
-            this.dataConverter_Tab.Text = "Data converter";
-            // 
-            // dataConverter_Panel
-            // 
-            this.dataConverter_Panel.AllowDrop = true;
-            this.dataConverter_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dataConverter_Panel.Controls.Add(this.loadBinaryFile_Button);
-            this.dataConverter_Panel.Controls.Add(this.dataConvertStatus_Label);
-            this.dataConverter_Panel.Controls.Add(this.float_TextBox);
-            this.dataConverter_Panel.Controls.Add(this.float_Label);
-            this.dataConverter_Panel.Controls.Add(this.decimal_Label);
-            this.dataConverter_Panel.Controls.Add(this.hex_TextBox);
-            this.dataConverter_Panel.Controls.Add(this.base64_TextBox);
-            this.dataConverter_Panel.Controls.Add(this.binaryLabel);
-            this.dataConverter_Panel.Controls.Add(this.rawBytes_Label);
-            this.dataConverter_Panel.Controls.Add(this.stringTextBox);
-            this.dataConverter_Panel.Controls.Add(this.octal_Label);
-            this.dataConverter_Panel.Controls.Add(this.decimal_TextBox);
-            this.dataConverter_Panel.Controls.Add(this.string_Label);
-            this.dataConverter_Panel.Controls.Add(this.bytesTextBox);
-            this.dataConverter_Panel.Controls.Add(this.hexLabel);
-            this.dataConverter_Panel.Controls.Add(this.base64_Label);
-            this.dataConverter_Panel.Controls.Add(this.stringEncoding_ComboBox);
-            this.dataConverter_Panel.Controls.Add(this.octal_TextBox);
-            this.dataConverter_Panel.Controls.Add(this.binary_TextBox);
-            this.dataConverter_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataConverter_Panel.Location = new System.Drawing.Point(3, 3);
-            this.dataConverter_Panel.Name = "dataConverter_Panel";
-            this.dataConverter_Panel.Size = new System.Drawing.Size(576, 274);
-            this.dataConverter_Panel.TabIndex = 20;
-            this.dataConverter_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.dataConverter_Panel_DragDrop);
-            this.dataConverter_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.dataConverter_Panel_DragEnter);
-            // 
-            // loadBinaryFile_Button
-            // 
-            this.loadBinaryFile_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.loadBinaryFile_Button.Location = new System.Drawing.Point(465, 150);
-            this.loadBinaryFile_Button.Name = "loadBinaryFile_Button";
-            this.loadBinaryFile_Button.Size = new System.Drawing.Size(89, 20);
-            this.loadBinaryFile_Button.Style = MetroFramework.MetroColorStyle.Black;
-            this.loadBinaryFile_Button.TabIndex = 67;
-            this.loadBinaryFile_Button.Text = "Load file";
-            this.loadBinaryFile_Button.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.loadBinaryFile_Button.UseSelectable = true;
-            // 
-            // dataConvertStatus_Label
-            // 
-            this.dataConvertStatus_Label.BackColor = System.Drawing.Color.Transparent;
-            this.dataConvertStatus_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataConvertStatus_Label.Location = new System.Drawing.Point(0, 252);
-            this.dataConvertStatus_Label.Name = "dataConvertStatus_Label";
-            this.dataConvertStatus_Label.Size = new System.Drawing.Size(574, 20);
-            this.dataConvertStatus_Label.TabIndex = 22;
-            this.dataConvertStatus_Label.Text = "Status: None";
-            this.dataConvertStatus_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.dataConvertStatus_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // float_TextBox
-            // 
-            this.float_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.float_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.float_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.float_TextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
-            this.float_TextBox.ForeColor = System.Drawing.Color.LightGray;
-            this.float_TextBox.Location = new System.Drawing.Point(151, 68);
-            this.float_TextBox.Name = "float_TextBox";
-            this.float_TextBox.Size = new System.Drawing.Size(124, 21);
-            this.float_TextBox.TabIndex = 21;
-            this.float_TextBox.Tag = "Float";
-            this.float_TextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
-            // 
-            // float_Label
-            // 
-            this.float_Label.AutoSize = true;
-            this.float_Label.Location = new System.Drawing.Point(12, 66);
-            this.float_Label.Name = "float_Label";
-            this.float_Label.Size = new System.Drawing.Size(38, 19);
-            this.float_Label.TabIndex = 20;
-            this.float_Label.Text = "Float";
-            this.float_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.float_Label.UseCustomBackColor = true;
-            // 
-            // base64_TextBox
-            // 
-            this.base64_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.base64_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.base64_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.base64_TextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.base64_TextBox.ForeColor = System.Drawing.Color.LightGray;
-            this.base64_TextBox.Location = new System.Drawing.Point(151, 123);
-            this.base64_TextBox.MaxLength = 512000;
-            this.base64_TextBox.Name = "base64_TextBox";
-            this.base64_TextBox.Size = new System.Drawing.Size(403, 21);
-            this.base64_TextBox.TabIndex = 15;
-            this.base64_TextBox.Tag = "Base64";
-            this.base64_TextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
-            // 
-            // rawBytes_Label
-            // 
-            this.rawBytes_Label.AutoSize = true;
-            this.rawBytes_Label.Location = new System.Drawing.Point(12, 150);
-            this.rawBytes_Label.Name = "rawBytes_Label";
-            this.rawBytes_Label.Size = new System.Drawing.Size(67, 19);
-            this.rawBytes_Label.TabIndex = 12;
-            this.rawBytes_Label.Text = "Raw bytes";
-            this.rawBytes_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.rawBytes_Label.UseCustomBackColor = true;
-            // 
-            // stringTextBox
-            // 
-            this.stringTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.stringTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.stringTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.stringTextBox.ForeColor = System.Drawing.Color.LightGray;
-            this.stringTextBox.Location = new System.Drawing.Point(151, 97);
-            this.stringTextBox.Name = "stringTextBox";
-            this.stringTextBox.Size = new System.Drawing.Size(308, 20);
-            this.stringTextBox.TabIndex = 9;
-            this.stringTextBox.Tag = "String";
-            this.stringTextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
-            // 
-            // string_Label
-            // 
-            this.string_Label.AutoSize = true;
-            this.string_Label.Location = new System.Drawing.Point(12, 97);
-            this.string_Label.Name = "string_Label";
-            this.string_Label.Size = new System.Drawing.Size(43, 19);
-            this.string_Label.TabIndex = 8;
-            this.string_Label.Text = "String";
-            this.string_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.string_Label.UseCustomBackColor = true;
-            // 
-            // bytesTextBox
-            // 
-            this.bytesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.bytesTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.bytesTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bytesTextBox.ForeColor = System.Drawing.Color.LightGray;
-            this.bytesTextBox.Location = new System.Drawing.Point(151, 150);
-            this.bytesTextBox.MaxLength = 512000;
-            this.bytesTextBox.Name = "bytesTextBox";
-            this.bytesTextBox.Size = new System.Drawing.Size(308, 20);
-            this.bytesTextBox.TabIndex = 16;
-            this.bytesTextBox.Tag = "Bytes";
-            this.bytesTextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
-            // 
-            // base64_Label
-            // 
-            this.base64_Label.AutoSize = true;
-            this.base64_Label.Location = new System.Drawing.Point(12, 123);
-            this.base64_Label.Name = "base64_Label";
-            this.base64_Label.Size = new System.Drawing.Size(50, 19);
-            this.base64_Label.TabIndex = 11;
-            this.base64_Label.Text = "Base64";
-            this.base64_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.base64_Label.UseCustomBackColor = true;
-            // 
-            // stringEncoding_ComboBox
-            // 
-            this.stringEncoding_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.stringEncoding_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.stringEncoding_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stringEncoding_ComboBox.ForeColor = System.Drawing.Color.LightGray;
-            this.stringEncoding_ComboBox.FormattingEnabled = true;
-            this.stringEncoding_ComboBox.Location = new System.Drawing.Point(465, 96);
-            this.stringEncoding_ComboBox.Name = "stringEncoding_ComboBox";
-            this.stringEncoding_ComboBox.Size = new System.Drawing.Size(89, 21);
-            this.stringEncoding_ComboBox.TabIndex = 10;
-            this.stringEncoding_ComboBox.Text = "ascii";
-            this.stringEncoding_ComboBox.SelectedIndexChanged += new System.EventHandler(this.encodingComboBox_SelectedIndexChanged);
-            // 
-            // asmDisasm_Tab
-            // 
-            this.asmDisasm_Tab.BackColor = System.Drawing.Color.Black;
-            this.asmDisasm_Tab.Controls.Add(this.asmStatusLabel);
-            this.asmDisasm_Tab.Controls.Add(this.splitContainer1);
-            this.asmDisasm_Tab.Location = new System.Drawing.Point(4, 38);
-            this.asmDisasm_Tab.Name = "asmDisasm_Tab";
-            this.asmDisasm_Tab.Size = new System.Drawing.Size(584, 282);
-            this.asmDisasm_Tab.TabIndex = 2;
-            this.asmDisasm_Tab.Text = "Asm/Disasm";
-            // 
-            // asmStatusLabel
-            // 
-            this.asmStatusLabel.BackColor = System.Drawing.Color.Transparent;
-            this.asmStatusLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.asmStatusLabel.Location = new System.Drawing.Point(0, 263);
-            this.asmStatusLabel.Name = "asmStatusLabel";
-            this.asmStatusLabel.Size = new System.Drawing.Size(584, 19);
-            this.asmStatusLabel.TabIndex = 17;
-            this.asmStatusLabel.Text = "Status: None";
-            this.asmStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.asmStatusLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // splitContainer1
-            // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            // 
-            // splitContainer1.Panel1
-            // 
-            this.splitContainer1.Panel1.Controls.Add(this.asmAction_ComboBox);
-            this.splitContainer1.Panel1.Controls.Add(this.asmArch_ComboBox);
-            this.splitContainer1.Panel1.Controls.Add(this.asmInput_ComboBox);
-            this.splitContainer1.Panel1.Controls.Add(this.asmCodeLabel);
-            this.splitContainer1.Panel1.Font = new System.Drawing.Font("Consolas", 9F);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.hexDataLabel);
-            this.splitContainer1.Panel2.Controls.Add(this.asmResult_ComboBox);
-            this.splitContainer1.Panel2.Font = new System.Drawing.Font("Consolas", 9F);
-            this.splitContainer1.Size = new System.Drawing.Size(584, 282);
-            this.splitContainer1.SplitterDistance = 294;
-            this.splitContainer1.TabIndex = 19;
-            // 
-            // asmAction_ComboBox
-            // 
-            this.asmAction_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.asmAction_ComboBox.AutoCompleteCustomSource.AddRange(new string[] {
-            "ARM",
-            "ARM64",
-            "X86",
-            "X86_64"});
-            this.asmAction_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.asmAction_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.asmAction_ComboBox.ForeColor = System.Drawing.Color.LightGray;
-            this.asmAction_ComboBox.FormattingEnabled = true;
-            this.asmAction_ComboBox.Items.AddRange(new object[] {
-            "Assemble",
-            "Disassemble"});
-            this.asmAction_ComboBox.Location = new System.Drawing.Point(110, 8);
-            this.asmAction_ComboBox.Name = "asmAction_ComboBox";
-            this.asmAction_ComboBox.Size = new System.Drawing.Size(82, 22);
-            this.asmAction_ComboBox.TabIndex = 17;
-            this.asmAction_ComboBox.Text = "Assemble";
-            // 
-            // asmArch_ComboBox
-            // 
-            this.asmArch_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.asmArch_ComboBox.AutoCompleteCustomSource.AddRange(new string[] {
-            "ARM",
-            "ARM64",
-            "X86",
-            "X86_64"});
-            this.asmArch_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.asmArch_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.asmArch_ComboBox.ForeColor = System.Drawing.Color.LightGray;
-            this.asmArch_ComboBox.FormattingEnabled = true;
-            this.asmArch_ComboBox.Items.AddRange(new object[] {
-            "ARM",
-            "ARM64",
-            "X86",
-            "X86_64"});
-            this.asmArch_ComboBox.Location = new System.Drawing.Point(198, 8);
-            this.asmArch_ComboBox.Name = "asmArch_ComboBox";
-            this.asmArch_ComboBox.Size = new System.Drawing.Size(82, 22);
-            this.asmArch_ComboBox.TabIndex = 16;
-            this.asmArch_ComboBox.Text = "X86";
-            this.asmArch_ComboBox.SelectedIndexChanged += new System.EventHandler(this.archComboBox_SelectedIndexChanged);
-            // 
-            // asmInput_ComboBox
-            // 
-            this.asmInput_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.asmInput_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.asmInput_ComboBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.asmInput_ComboBox.ForeColor = System.Drawing.Color.LightGray;
-            this.asmInput_ComboBox.Location = new System.Drawing.Point(15, 35);
-            this.asmInput_ComboBox.Name = "asmInput_ComboBox";
-            this.asmInput_ComboBox.Size = new System.Drawing.Size(265, 216);
-            this.asmInput_ComboBox.TabIndex = 12;
-            this.asmInput_ComboBox.Text = "";
-            this.asmInput_ComboBox.TextChanged += new System.EventHandler(this.asmCodeBox_TextChanged);
-            // 
-            // asmCodeLabel
-            // 
-            this.asmCodeLabel.AutoSize = true;
-            this.asmCodeLabel.Location = new System.Drawing.Point(12, 10);
-            this.asmCodeLabel.Name = "asmCodeLabel";
-            this.asmCodeLabel.Size = new System.Drawing.Size(38, 19);
-            this.asmCodeLabel.TabIndex = 13;
-            this.asmCodeLabel.Text = "Input";
-            this.asmCodeLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.asmCodeLabel.UseCustomBackColor = true;
-            // 
-            // hexDataLabel
-            // 
-            this.hexDataLabel.AutoSize = true;
-            this.hexDataLabel.Location = new System.Drawing.Point(10, 10);
-            this.hexDataLabel.Name = "hexDataLabel";
-            this.hexDataLabel.Size = new System.Drawing.Size(43, 19);
-            this.hexDataLabel.TabIndex = 2;
-            this.hexDataLabel.Text = "Result";
-            this.hexDataLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.hexDataLabel.UseCustomBackColor = true;
-            // 
-            // asmResult_ComboBox
-            // 
-            this.asmResult_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.asmResult_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.asmResult_ComboBox.Font = new System.Drawing.Font("Consolas", 12F);
-            this.asmResult_ComboBox.ForeColor = System.Drawing.Color.LightGray;
-            this.asmResult_ComboBox.Location = new System.Drawing.Point(10, 35);
-            this.asmResult_ComboBox.Name = "asmResult_ComboBox";
-            this.asmResult_ComboBox.ReadOnly = true;
-            this.asmResult_ComboBox.Size = new System.Drawing.Size(268, 216);
-            this.asmResult_ComboBox.TabIndex = 14;
-            this.asmResult_ComboBox.Text = "";
             // 
             // patternScan_Tab
             // 
@@ -939,6 +611,342 @@
             this.groupBox2.TabIndex = 65;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pattern scanner";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.metroLabel1.Location = new System.Drawing.Point(3, 18);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(578, 96);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Black;
+            this.metroLabel1.TabIndex = 71;
+            this.metroLabel1.Text = "Comming soon";
+            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.UseCustomBackColor = true;
+            // 
+            // dataConverter_Tab
+            // 
+            this.dataConverter_Tab.BackColor = System.Drawing.Color.Black;
+            this.dataConverter_Tab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dataConverter_Tab.Controls.Add(this.dataConverter_Panel);
+            this.dataConverter_Tab.Location = new System.Drawing.Point(4, 38);
+            this.dataConverter_Tab.Name = "dataConverter_Tab";
+            this.dataConverter_Tab.Padding = new System.Windows.Forms.Padding(3);
+            this.dataConverter_Tab.Size = new System.Drawing.Size(584, 282);
+            this.dataConverter_Tab.TabIndex = 0;
+            this.dataConverter_Tab.Text = "Data converter";
+            // 
+            // dataConverter_Panel
+            // 
+            this.dataConverter_Panel.AllowDrop = true;
+            this.dataConverter_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.dataConverter_Panel.Controls.Add(this.loadBinaryFile_Button);
+            this.dataConverter_Panel.Controls.Add(this.dataConvertStatus_Label);
+            this.dataConverter_Panel.Controls.Add(this.float_TextBox);
+            this.dataConverter_Panel.Controls.Add(this.float_Label);
+            this.dataConverter_Panel.Controls.Add(this.decimal_Label);
+            this.dataConverter_Panel.Controls.Add(this.hex_TextBox);
+            this.dataConverter_Panel.Controls.Add(this.base64_TextBox);
+            this.dataConverter_Panel.Controls.Add(this.binaryLabel);
+            this.dataConverter_Panel.Controls.Add(this.rawBytes_Label);
+            this.dataConverter_Panel.Controls.Add(this.stringTextBox);
+            this.dataConverter_Panel.Controls.Add(this.octal_Label);
+            this.dataConverter_Panel.Controls.Add(this.decimal_TextBox);
+            this.dataConverter_Panel.Controls.Add(this.string_Label);
+            this.dataConverter_Panel.Controls.Add(this.bytesTextBox);
+            this.dataConverter_Panel.Controls.Add(this.hexLabel);
+            this.dataConverter_Panel.Controls.Add(this.base64_Label);
+            this.dataConverter_Panel.Controls.Add(this.stringEncoding_ComboBox);
+            this.dataConverter_Panel.Controls.Add(this.octal_TextBox);
+            this.dataConverter_Panel.Controls.Add(this.binary_TextBox);
+            this.dataConverter_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataConverter_Panel.Location = new System.Drawing.Point(3, 3);
+            this.dataConverter_Panel.Name = "dataConverter_Panel";
+            this.dataConverter_Panel.Size = new System.Drawing.Size(576, 274);
+            this.dataConverter_Panel.TabIndex = 20;
+            this.dataConverter_Panel.DragDrop += new System.Windows.Forms.DragEventHandler(this.dataConverter_Panel_DragDrop);
+            this.dataConverter_Panel.DragEnter += new System.Windows.Forms.DragEventHandler(this.dataConverter_Panel_DragEnter);
+            // 
+            // loadBinaryFile_Button
+            // 
+            this.loadBinaryFile_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.loadBinaryFile_Button.Location = new System.Drawing.Point(465, 150);
+            this.loadBinaryFile_Button.Name = "loadBinaryFile_Button";
+            this.loadBinaryFile_Button.Size = new System.Drawing.Size(89, 20);
+            this.loadBinaryFile_Button.Style = MetroFramework.MetroColorStyle.Black;
+            this.loadBinaryFile_Button.TabIndex = 67;
+            this.loadBinaryFile_Button.Text = "Load file";
+            this.loadBinaryFile_Button.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.loadBinaryFile_Button.UseSelectable = true;
+            // 
+            // dataConvertStatus_Label
+            // 
+            this.dataConvertStatus_Label.BackColor = System.Drawing.Color.Transparent;
+            this.dataConvertStatus_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataConvertStatus_Label.Location = new System.Drawing.Point(0, 252);
+            this.dataConvertStatus_Label.Name = "dataConvertStatus_Label";
+            this.dataConvertStatus_Label.Size = new System.Drawing.Size(574, 20);
+            this.dataConvertStatus_Label.TabIndex = 22;
+            this.dataConvertStatus_Label.Text = "Status: None";
+            this.dataConvertStatus_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dataConvertStatus_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // float_TextBox
+            // 
+            this.float_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.float_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.float_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.float_TextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold);
+            this.float_TextBox.ForeColor = System.Drawing.Color.LightGray;
+            this.float_TextBox.Location = new System.Drawing.Point(151, 68);
+            this.float_TextBox.Name = "float_TextBox";
+            this.float_TextBox.Size = new System.Drawing.Size(124, 21);
+            this.float_TextBox.TabIndex = 21;
+            this.float_TextBox.Tag = "Float";
+            this.float_TextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
+            // 
+            // float_Label
+            // 
+            this.float_Label.AutoSize = true;
+            this.float_Label.Location = new System.Drawing.Point(12, 66);
+            this.float_Label.Name = "float_Label";
+            this.float_Label.Size = new System.Drawing.Size(38, 19);
+            this.float_Label.TabIndex = 20;
+            this.float_Label.Text = "Float";
+            this.float_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.float_Label.UseCustomBackColor = true;
+            // 
+            // base64_TextBox
+            // 
+            this.base64_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.base64_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.base64_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.base64_TextBox.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.base64_TextBox.ForeColor = System.Drawing.Color.LightGray;
+            this.base64_TextBox.Location = new System.Drawing.Point(151, 123);
+            this.base64_TextBox.MaxLength = 512000;
+            this.base64_TextBox.Name = "base64_TextBox";
+            this.base64_TextBox.Size = new System.Drawing.Size(403, 21);
+            this.base64_TextBox.TabIndex = 15;
+            this.base64_TextBox.Tag = "Base64";
+            this.base64_TextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
+            // 
+            // rawBytes_Label
+            // 
+            this.rawBytes_Label.AutoSize = true;
+            this.rawBytes_Label.Location = new System.Drawing.Point(12, 150);
+            this.rawBytes_Label.Name = "rawBytes_Label";
+            this.rawBytes_Label.Size = new System.Drawing.Size(67, 19);
+            this.rawBytes_Label.TabIndex = 12;
+            this.rawBytes_Label.Text = "Raw bytes";
+            this.rawBytes_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.rawBytes_Label.UseCustomBackColor = true;
+            // 
+            // stringTextBox
+            // 
+            this.stringTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stringTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.stringTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stringTextBox.ForeColor = System.Drawing.Color.LightGray;
+            this.stringTextBox.Location = new System.Drawing.Point(151, 97);
+            this.stringTextBox.Name = "stringTextBox";
+            this.stringTextBox.Size = new System.Drawing.Size(308, 20);
+            this.stringTextBox.TabIndex = 9;
+            this.stringTextBox.Tag = "String";
+            this.stringTextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
+            // 
+            // string_Label
+            // 
+            this.string_Label.AutoSize = true;
+            this.string_Label.Location = new System.Drawing.Point(12, 97);
+            this.string_Label.Name = "string_Label";
+            this.string_Label.Size = new System.Drawing.Size(43, 19);
+            this.string_Label.TabIndex = 8;
+            this.string_Label.Text = "String";
+            this.string_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.string_Label.UseCustomBackColor = true;
+            // 
+            // bytesTextBox
+            // 
+            this.bytesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.bytesTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.bytesTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bytesTextBox.ForeColor = System.Drawing.Color.LightGray;
+            this.bytesTextBox.Location = new System.Drawing.Point(151, 150);
+            this.bytesTextBox.MaxLength = 512000;
+            this.bytesTextBox.Name = "bytesTextBox";
+            this.bytesTextBox.Size = new System.Drawing.Size(308, 20);
+            this.bytesTextBox.TabIndex = 16;
+            this.bytesTextBox.Tag = "Bytes";
+            this.bytesTextBox.TextChanged += new System.EventHandler(this.decimalTextBox_TextChanged);
+            // 
+            // base64_Label
+            // 
+            this.base64_Label.AutoSize = true;
+            this.base64_Label.Location = new System.Drawing.Point(12, 123);
+            this.base64_Label.Name = "base64_Label";
+            this.base64_Label.Size = new System.Drawing.Size(50, 19);
+            this.base64_Label.TabIndex = 11;
+            this.base64_Label.Text = "Base64";
+            this.base64_Label.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.base64_Label.UseCustomBackColor = true;
+            // 
+            // stringEncoding_ComboBox
+            // 
+            this.stringEncoding_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.stringEncoding_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.stringEncoding_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stringEncoding_ComboBox.ForeColor = System.Drawing.Color.LightGray;
+            this.stringEncoding_ComboBox.FormattingEnabled = true;
+            this.stringEncoding_ComboBox.Location = new System.Drawing.Point(465, 96);
+            this.stringEncoding_ComboBox.Name = "stringEncoding_ComboBox";
+            this.stringEncoding_ComboBox.Size = new System.Drawing.Size(89, 21);
+            this.stringEncoding_ComboBox.TabIndex = 10;
+            this.stringEncoding_ComboBox.Text = "ascii";
+            this.stringEncoding_ComboBox.SelectedIndexChanged += new System.EventHandler(this.encodingComboBox_SelectedIndexChanged);
+            // 
+            // asmDisasm_Tab
+            // 
+            this.asmDisasm_Tab.BackColor = System.Drawing.Color.Black;
+            this.asmDisasm_Tab.Controls.Add(this.asmStatusLabel);
+            this.asmDisasm_Tab.Controls.Add(this.splitContainer1);
+            this.asmDisasm_Tab.Location = new System.Drawing.Point(4, 38);
+            this.asmDisasm_Tab.Name = "asmDisasm_Tab";
+            this.asmDisasm_Tab.Size = new System.Drawing.Size(584, 282);
+            this.asmDisasm_Tab.TabIndex = 2;
+            this.asmDisasm_Tab.Text = "Asm/Disasm";
+            // 
+            // asmStatusLabel
+            // 
+            this.asmStatusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.asmStatusLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.asmStatusLabel.Location = new System.Drawing.Point(0, 263);
+            this.asmStatusLabel.Name = "asmStatusLabel";
+            this.asmStatusLabel.Size = new System.Drawing.Size(584, 19);
+            this.asmStatusLabel.TabIndex = 17;
+            this.asmStatusLabel.Text = "Status: None";
+            this.asmStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.asmStatusLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.asmAction_ComboBox);
+            this.splitContainer1.Panel1.Controls.Add(this.asmArch_ComboBox);
+            this.splitContainer1.Panel1.Controls.Add(this.asmInput_ComboBox);
+            this.splitContainer1.Panel1.Controls.Add(this.asmCodeLabel);
+            this.splitContainer1.Panel1.Font = new System.Drawing.Font("Consolas", 9F);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.hexDataLabel);
+            this.splitContainer1.Panel2.Controls.Add(this.asmResult_ComboBox);
+            this.splitContainer1.Panel2.Font = new System.Drawing.Font("Consolas", 9F);
+            this.splitContainer1.Size = new System.Drawing.Size(584, 282);
+            this.splitContainer1.SplitterDistance = 294;
+            this.splitContainer1.TabIndex = 19;
+            // 
+            // asmAction_ComboBox
+            // 
+            this.asmAction_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.asmAction_ComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "ARM",
+            "ARM64",
+            "X86",
+            "X86_64"});
+            this.asmAction_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.asmAction_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.asmAction_ComboBox.ForeColor = System.Drawing.Color.LightGray;
+            this.asmAction_ComboBox.FormattingEnabled = true;
+            this.asmAction_ComboBox.Items.AddRange(new object[] {
+            "Assemble",
+            "Disassemble"});
+            this.asmAction_ComboBox.Location = new System.Drawing.Point(110, 8);
+            this.asmAction_ComboBox.Name = "asmAction_ComboBox";
+            this.asmAction_ComboBox.Size = new System.Drawing.Size(82, 22);
+            this.asmAction_ComboBox.TabIndex = 17;
+            this.asmAction_ComboBox.Text = "Assemble";
+            // 
+            // asmArch_ComboBox
+            // 
+            this.asmArch_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.asmArch_ComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "ARM",
+            "ARM64",
+            "X86",
+            "X86_64"});
+            this.asmArch_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.asmArch_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.asmArch_ComboBox.ForeColor = System.Drawing.Color.LightGray;
+            this.asmArch_ComboBox.FormattingEnabled = true;
+            this.asmArch_ComboBox.Location = new System.Drawing.Point(198, 8);
+            this.asmArch_ComboBox.Name = "asmArch_ComboBox";
+            this.asmArch_ComboBox.Size = new System.Drawing.Size(82, 22);
+            this.asmArch_ComboBox.TabIndex = 16;
+            this.asmArch_ComboBox.Text = "X86";
+            this.asmArch_ComboBox.SelectedIndexChanged += new System.EventHandler(this.archComboBox_SelectedIndexChanged);
+            // 
+            // asmInput_ComboBox
+            // 
+            this.asmInput_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.asmInput_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.asmInput_ComboBox.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.asmInput_ComboBox.ForeColor = System.Drawing.Color.LightGray;
+            this.asmInput_ComboBox.Location = new System.Drawing.Point(15, 35);
+            this.asmInput_ComboBox.Name = "asmInput_ComboBox";
+            this.asmInput_ComboBox.Size = new System.Drawing.Size(265, 216);
+            this.asmInput_ComboBox.TabIndex = 12;
+            this.asmInput_ComboBox.Text = "";
+            this.asmInput_ComboBox.TextChanged += new System.EventHandler(this.asmCodeBox_TextChanged);
+            // 
+            // asmCodeLabel
+            // 
+            this.asmCodeLabel.AutoSize = true;
+            this.asmCodeLabel.Location = new System.Drawing.Point(12, 10);
+            this.asmCodeLabel.Name = "asmCodeLabel";
+            this.asmCodeLabel.Size = new System.Drawing.Size(38, 19);
+            this.asmCodeLabel.TabIndex = 13;
+            this.asmCodeLabel.Text = "Input";
+            this.asmCodeLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.asmCodeLabel.UseCustomBackColor = true;
+            // 
+            // hexDataLabel
+            // 
+            this.hexDataLabel.AutoSize = true;
+            this.hexDataLabel.Location = new System.Drawing.Point(10, 10);
+            this.hexDataLabel.Name = "hexDataLabel";
+            this.hexDataLabel.Size = new System.Drawing.Size(43, 19);
+            this.hexDataLabel.TabIndex = 2;
+            this.hexDataLabel.Text = "Result";
+            this.hexDataLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.hexDataLabel.UseCustomBackColor = true;
+            // 
+            // asmResult_ComboBox
+            // 
+            this.asmResult_ComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.asmResult_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.asmResult_ComboBox.Font = new System.Drawing.Font("Consolas", 12F);
+            this.asmResult_ComboBox.ForeColor = System.Drawing.Color.LightGray;
+            this.asmResult_ComboBox.Location = new System.Drawing.Point(10, 35);
+            this.asmResult_ComboBox.Name = "asmResult_ComboBox";
+            this.asmResult_ComboBox.ReadOnly = true;
+            this.asmResult_ComboBox.Size = new System.Drawing.Size(268, 216);
+            this.asmResult_ComboBox.TabIndex = 14;
+            this.asmResult_ComboBox.Text = "";
             // 
             // codeConverter_Tab
             // 
@@ -1536,19 +1544,6 @@
             this.opacity_TrackBar.Value = 100;
             this.opacity_TrackBar.ValueChanged += new System.EventHandler(this.metroTrackBar1_ValueChanged);
             // 
-            // metroLabel1
-            // 
-            this.metroLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 18);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(578, 96);
-            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Black;
-            this.metroLabel1.TabIndex = 71;
-            this.metroLabel1.Text = "Comming soon";
-            this.metroLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroLabel1.UseCustomBackColor = true;
-            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -1568,16 +1563,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.main_TabControl.ResumeLayout(false);
-            this.dataConverter_Tab.ResumeLayout(false);
-            this.dataConverter_Panel.ResumeLayout(false);
-            this.dataConverter_Panel.PerformLayout();
-            this.asmDisasm_Tab.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
             this.patternScan_Tab.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
@@ -1589,6 +1574,16 @@
             this.splitContainer4.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.dataConverter_Tab.ResumeLayout(false);
+            this.dataConverter_Panel.ResumeLayout(false);
+            this.dataConverter_Panel.PerformLayout();
+            this.asmDisasm_Tab.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.codeConverter_Tab.ResumeLayout(false);
             this.splitContainer5.Panel1.ResumeLayout(false);
             this.splitContainer5.Panel1.PerformLayout();
