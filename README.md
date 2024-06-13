@@ -18,7 +18,7 @@ A multifunctional data converter for low-level developers & reverse-engineers.
 </div>
 <br/>
 <div align=center style="background-color: transparent;">
-    <img width="100%" src="Images/tab-vb2C#.png"></img>
+    <img width="100%" src="Images/tab-vb2csharp.png"></img>
     <text>C# <-> VB.NET tab</text>
 </div>
 <br/>
